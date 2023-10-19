@@ -1,0 +1,255 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 150px;
+    text-align: center;
+    background: linear-gradient(to top left, blue, green);
+    color: white;
+}
+
+.Nombre {
+    padding-top: 5px;
+}
+
+.tit {
+    font-size: 50px;
+     /* line-height: calc(20px + 20vh);
+   /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+     color: #fccaff; */
+    text-shadow: 0 0 5px #0800ff, 0 0 15px #0800ff, 0 0 20px #0800ff, 0 0 40px #0800ff, 0 0 60px #00ff04, 0 0 10px #0800ff, 0 0 98px #00ff04;
+    color: #00ff04;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+}
+.navbar{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;font-size: 20px;
+    display: flex;
+    justify-content: center;
+    /*overflow: hidden;*/
+    background-color: cyan;
+  
+}
+
+
+
+.navbar a {
+    float: left;
+    font-size: 16px; 
+    color: black;
+    /*Aquí puedes cambiar el color de letra de los links sin subopciones (Home y News) */
+    text-align: center;
+border-radius: 30px;
+    text-decoration: none;
+} 
+.navbar a:hover{
+    background-color:cadetblue;
+  }
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+aside {
+    -ms-flex: 20%;
+    /* IE10 */
+    flex: 20%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+section {
+    -ms-flex: 80%;
+    /* IE10 */
+    flex: 80%;
+    background-color: white;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+#section_horario{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #666;
+}
+
+ul {
+    display: flex;
+}
+
+.redsocial {
+    list-style: none;
+    margin: 0 15x;
+    cursor: pointer;
+}
+
+.redsocial {
+    position: relative;
+    display: block;
+    height: 65px;/*100*/
+    width: 65px;
+    background: #333;
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+    font-size: 3em;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#fb{
+   padding: 9px;
+}
+
+#tt{
+    padding: 10px;
+}
+
+#ig{
+    padding: 9px;
+}
+
+ul .redsocial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: var(--color);
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+ul .redsocial:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--color);
+}
+
+ul .redsocial:hover {
+    color: var(--color);
+    box-shadow: 0px 0px 8px var(--color);
+    text-shadow: 0 0 8px var(--color);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+@-webkit-keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #005eff, 0 0 15px #005eff, 0 0 20px #005eff, 0 0 40px #005eff, 0 0 60px #44ff00, 0 0 10px #005eff, 0 0 98px #44ff00;
+        color: #00ff04;
+    }
+}
+
+@keyframes blink {
+
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #005eff, 0 0 15px #005eff, 0 0 20px #005eff, 0 0 40px #005eff, 0 0 60px #44ff00, 0 0 10px #005eff, 0 0 98px #44ff00;
+        color: #00ff04;
+    }
+}
+.rotate-in-center {
+    width: 500px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #005eff;
+	animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes rotate-in-center {
+    0% {
+      transform: rotate(-360deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+
+#butt{
+    font-family: 'Times New Roman', Times, serif;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #00FFFF;
+}
+#info{
+    text-align: center;
+}

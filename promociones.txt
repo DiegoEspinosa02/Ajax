@@ -1,0 +1,5 @@
+<p style="text-align: justify;">Por cada siete llenados de tu garrafón con su cupón en ventanilla el llenado número ocho
+    será
+    <b>GRATIS</b> no te lo pierdas
+</p>
+<img src="botellonfeliz-removebg-preview.png">

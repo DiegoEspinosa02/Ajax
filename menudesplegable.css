@@ -1,0 +1,47 @@
+.menudesplegable{
+    float: left;
+      overflow: hidden;
+    }
+    
+    .menudesplegable .menubtn ,.opcion{
+      font-size: 25px;  
+      border: none;
+      outline: none;
+      /*color: black; /*Aquí puedes cambiar el color de letra del link que tiene menú (dropdown)*/
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .MenuPrincipal a:hover, .menudesplegable:hover, .menubtn .opcion{
+        background-color:aquamarine;
+      }
+    
+      .menuCont {
+        display: none;
+        position: absolute;
+        background-color:beige;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .menuCont a{
+        font-size: 25px; 
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    
+      }
+    
+      .menuCont a:hover {
+        background-color:darkgrey;
+      }
+      
+      .menudesplegable:hover .menuCont {
+        display: block;
+      }
